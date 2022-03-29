@@ -5,7 +5,7 @@ Ziel dieses Projektes war der Bau eines einfachen LaserTag-Systems. Es sollte sc
 
 Weitere Features sind:
 
-- Soundausgabe für Schuss, Treffer und Nachladen (insgesamt 5 verschiedene)
+- Soundausgabe für Schuss, Treffer und Nachladen (insgesamt 5 Verschiedene)
 - Display in jedem Tagger
 - lange Akkulaufzeit des gesamten Systems
 - 3 Spielmodi
