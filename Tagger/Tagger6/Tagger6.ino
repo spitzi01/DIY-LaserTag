@@ -288,15 +288,51 @@ void loop()
          if(((ID[i+1]-ID[i]) > 400)&&((ID[i+1]-ID[i]) < 600)&&((ID[i+2]-ID[i+1]) > 400)&&((ID[i+2]-ID[i+1]) < 600)) stat[i/2-1] = false;
          else if(((ID[i+1]-ID[i]) > 600)&&((ID[i+1]-ID[i]) < 800)&&((ID[i+2]-ID[i+1]) > 200)&&((ID[i+2]-ID[i+1]) < 400)) stat[i/2-1] = true;
       }
-      if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&stat[6]&&stat[7]&&stat[8]&&x.name10!="") Hit(9);
-      else if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&stat[6]&&stat[7]&&!stat[8]&&x.name9!="") Hit(8);
-      else if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&stat[6]&&!stat[7]&&!stat[8]&&x.name8!="") Hit(7);
-      else if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name7!="") Hit(6);
-      else if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name5!="") Hit(4);
-      else if(stat[0]&&stat[1]&&stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name4!="") Hit(3);
-      else if(stat[0]&&stat[1]&&!stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name3!="") Hit(2);
-      else if(stat[0]&&!stat[1]&&!stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name2!="") Hit(1);
-      else if(!stat[0]&&!stat[1]&&!stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name1!="") Hit(0);
+      if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&stat[6]&&stat[7]&&stat[8]&&x.name10!="")
+      {
+        if((x.Teamfarbe[9] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(9);
+        else if(x.Teamfarbe[9] != x.Teamfarbe[x.num]) Hit(9);
+      }
+      else if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&stat[6]&&stat[7]&&!stat[8]&&x.name9!="")
+      {
+        if((x.Teamfarbe[8] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(8);
+        else if(x.Teamfarbe[8] != x.Teamfarbe[x.num]) Hit(8);
+      }
+      else if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name8!="")
+      {
+        if((x.Teamfarbe[7] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(7);
+        else if(x.Teamfarbe[7] != x.Teamfarbe[x.num]) Hit(7);
+      }
+      else if(stat[0]&&stat[1]&&stat[2]&&stat[3]&&stat[4]&&stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name7!="")
+      {
+        if((x.Teamfarbe[6] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(6);
+        else if(x.Teamfarbe[6] != x.Teamfarbe[x.num]) Hit(6);
+      }
+      else if(stat[0]&&stat[6]&&stat[2]&&stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name5!="")
+      {
+        if((x.Teamfarbe[4] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(4);
+        else if(x.Teamfarbe[4] != x.Teamfarbe[x.num]) Hit(4);
+      }
+      else if(stat[0]&&stat[1]&&stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name4!="")
+      {
+        if((x.Teamfarbe[3] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(3);
+        else if(x.Teamfarbe[3] != x.Teamfarbe[x.num]) Hit(3);
+      }
+      else if(stat[0]&&stat[1]&&!stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name3!="")
+      {
+        if((x.Teamfarbe[2] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(2);
+        else if(x.Teamfarbe[2] != x.Teamfarbe[x.num]) Hit(2);
+      }
+      else if(stat[0]&&!stat[1]&&!stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name2!="")
+      {
+        if((x.Teamfarbe[1] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(1);
+        else if(x.Teamfarbe[1] != x.Teamfarbe[x.num]) Hit(1);
+      }
+      else if(!stat[0]&&!stat[1]&&!stat[2]&&!stat[3]&&!stat[4]&&!stat[5]&&!stat[6]&&!stat[7]&&!stat[8]&&x.name1!="")
+      {
+        if((x.Teamfarbe[0] == x.Teamfarbe[x.num])&&x.Aktiv_Friendlyfire&&(x.Modus != 2)) Hit(0);
+        else if(x.Teamfarbe[0] != x.Teamfarbe[x.num]) Hit(0);
+      }
     }
     attachInterrupt(Receiver_Pin, ISR, CHANGE);
     if((micros()-ID[0]) > 12000)          // Reset unvollständige Daten bei Timeout
@@ -407,11 +443,11 @@ void loop()
     ITimer0.stopTimer();
     detachInterrupt(Receiver_Pin);
 
-    delay(2000);
+    delay(2500);
 
     esp_now_send(mac0, (uint8_t *) &x, sizeof(x));                        // Senden an Server
     int i = 0;
-    while((success1 == false)&&(i < 120))                                  // Versuche erneut zu senden
+    while((success1 == false)&&(i < 600))                                  // Versuche erneut zu senden
     {
       delay(1000);
       i++;

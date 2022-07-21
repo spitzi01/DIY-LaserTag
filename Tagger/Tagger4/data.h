@@ -5,6 +5,7 @@ struct Daten
   uint8_t Magazin_Reload; 	      // Nachlade-Wert für das Magazin
 	uint8_t Modus;                  // Spielmodus 0: Standard, 1: Battle Royal, 2: Capture the Flag
 	bool Aktiv_Magazin; 		        // Magazin-Feature Aktivierung
+  bool Aktiv_Friendlyfire;        // Ermöglicht es Teammitglieder abzuschießen
 	bool Full_Auto; 		            // Schnellfeuer Aktivierung
 	uint8_t Laenge; 		            // Dauer des Spiels in Minuten
 	uint8_t Leben_Reload;           // Leben für Battle Royal Spielmodus
