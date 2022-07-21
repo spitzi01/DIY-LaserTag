@@ -34,7 +34,6 @@ Die verfügbaren Spielmodi sind:
 - Capture the Flag (2 Teams rot & blau, Flags markieren Basis oder Spawnpunkt des jeweiligen Teams, Reaktivierung nur im Bereich des eigenen Spawnpunkts, Punkte bei Aufenthalt in gegnerischen Basis)
 
 ### Flag
-![Flag](/Flag/Flag_Beispiel.JPG)
 Ein Flag sendet in regelmäßigen Abständen einen Code der von den Taggern empfangen wird. Bereich, in dem das Signal empfangbar ist, beträgt in etwa 5-8 Meter im Radius. Diese Strecke ergibt sich durch den Einsatz von ESP32 S2 Mikrocontroller ohne integriete Antenne in den Taggern.
 
 ### Verbesserungsmöglichkeiten
